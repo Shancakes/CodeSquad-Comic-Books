@@ -1,0 +1,678 @@
+:root {
+    --Teal: #006B6B;
+    --Light-Teal: #009E9E;
+    --Yellow: #FCCF14;
+    --Blue: #063C5E;
+    --white: #ffffff;
+    --Grey: #C2C2C2;
+    font-size: 1.4rem;
+}
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+/* styles all <h1><h2><h3> tags */
+.header-text {
+    text-align: center;
+    color: var(--Blue);
+    font-family: 'Fredericka the Great', cursive;
+    padding: 1.5rem;
+}
+
+
+body {
+    width: 100%;
+    max-width: 100vw;
+    margin: auto;
+    overflow-x: hidden;
+    font-family: 'Open Sans', sans-serif;
+}
+
+table {
+    padding: .5;
+}
+
+.gradient {
+    background-image: linear-gradient(#ffffff, #009E9E, #006B6B);
+}
+
+.content {
+    border: 5px solid var(--Blue);
+    background-color: var(--white);
+    margin: 5vw auto;
+    width: 80%;
+    padding: 1.5rem;
+    box-sizing: border-box;
+}
+
+
+
+
+/* --Buttons-- */
+
+.blue-button {
+    background-color: var(--Blue);
+    color: var(--white);
+    border: solid 2px var(--Blue);
+    width: fit-content;
+    margin: .2rem .10rem;
+    font-size: 1.1rem;
+}
+
+.yellow-button {
+    background-color: var(--Yellow);
+    color: var(--Blue);
+    border: solid 2px var(--Blue);
+    width: fit-content;
+    margin: .3rem .6rem;
+    font-size: 1.1rem;
+}
+
+
+
+
+
+/* --Header-- */
+
+
+
+.header-container {
+    background: var(--Blue);
+    color: white;
+    padding-bottom: 15px;
+    display: flex;
+    flex-direction: row;
+}
+
+.header-logo-left {
+    margin: 1vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.nav-container {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+
+
+}
+
+.header-nav {
+    display: flex;
+}
+
+.header-nav li {
+    text-decoration: none;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+
+.header-nav a {
+    list-style: none;
+    display: flex;
+    align-content: space-between;
+    padding: 3%;
+}
+
+
+/* --Styling Links-- */
+
+/*styling links white*/
+a.class1 {
+    color: var(--white);
+    text-decoration: none;
+}
+
+a.class1:link {
+    color: var(--white);
+}
+
+a.class1:visited {
+    color: var(--white);
+}
+
+a.class1:hover {
+    color: var(--Yellow);
+    font-weight: bold;
+}
+
+a.class1:active {
+    color: var(--Blue);
+    font-weight: bold;
+    background-color: var(--Yellow);
+}
+
+/*styling links blue*/
+a.class2 {
+    color: var(--Blue);
+    font-weight: bold;
+}
+
+a.class2:link {
+    color: var(--Blue);
+}
+
+a.class2:visited {
+    color: var(--Blue);
+}
+
+a.class2:hover {
+    color: var(--Teal);
+}
+
+a.class2:active {
+    color: var(--Blue);
+}
+
+
+
+
+
+
+/* --Footer-- */
+
+.footer-container {
+    background: var(--Blue);
+    color: white;
+    padding: 1.5rem;
+    width: 100%;
+    border-top: 10px var(--Yellow) solid;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-content: space-around;
+    font-family: 'Fredericka the Great', cursive;
+}
+
+.footer-content {
+
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+}
+
+.footer-content p {
+    padding: 1rem 0;
+}
+
+.footer-icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.yellow {
+    color: var(--Yellow);
+    font-weight: bold;
+}
+
+
+
+/* --Walking Dead Card-- */
+
+.walking-dead-container {
+
+    border: 5px solid var(--Yellow);
+    border-radius: 40px;
+    margin: 10vh auto;
+    width: 600px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.walking-dead-top {
+    overflow: hidden;
+    text-align: center;
+    color: var(--Yellow);
+    background-color: var(--Blue);
+    background-size: contain;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Fredericka the Great', cursive;
+    padding: 3%;
+
+}
+
+.walkingdeadimage {
+    margin: auto;
+    border-radius: 40px;
+    border: 5px var(--white) solid;
+}
+
+.walking-dead-bottom {
+    padding: 20px;
+    border-top: 5px var(--Yellow) solid;
+    background-color: var(--white);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.walking-dead-bottom p {
+    margin: 2%;
+}
+
+
+
+
+
+/* --Admin-- */
+
+/* Table Styling*/
+.admin-table tr:nth-child(even) {
+    background: #C2C2C2;
+}
+
+.admin-table {
+    border-collapse: collapse;
+    border: 2px solid #000000;
+    background-color: #FFFFFF;
+    margin: auto;
+    width: 80%;
+}
+
+.admin-thead {
+    background-color: #C2C2C2;
+}
+
+
+
+.admin-table td,
+.admin-table th {
+    border: 1px solid #000000;
+    margin: 0px;
+    /* text-align: center; */
+    padding: .5%;
+}
+
+
+/*flexbox styling*/
+.admin-content {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+
+.admin-table-container {
+    margin: 40px;
+}
+
+
+
+
+
+
+/* --Create-- */
+
+.create-content {
+    display: inline-block;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+
+.create-content form label {
+    display: inline-block;
+    text-align: right;
+    width: 200px;
+    vertical-align: top;
+}
+
+.create-content form input[type=text] {
+    display: inline-block;
+    width: 350px;
+}
+
+.create-content form select {
+    width: 355px;
+}
+
+.create-dropdown-menu {
+    width: 355px;
+    background-color: var(--white);
+    border: 1px solid var(--Grey);
+    border-radius: 1px;
+}
+
+/* label [for=synopsis] {
+    display: block;
+    float: left;
+
+} */
+
+.synopsis-textbox {
+    resize: none;
+    width: 350px;
+    height: 200px;
+}
+
+
+
+/* --Index-- */
+
+.index-page-container {
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.comic-content {
+    width: 250px;
+    text-align: center;
+    display: inline;
+    display: flex;
+    padding: 4% .5% 0% 0%;
+    flex-direction: column;
+}
+
+.display-more-button {
+    margin: auto;
+}
+
+
+a.detail-links:link {
+    color: var(--Blue);
+    text-decoration: none;
+}
+
+a.detail-links:visited {
+    color: var(--Blue);
+}
+
+a.detail-links:hover {
+    color: var(--Teal);
+    font-weight: bold;
+}
+
+a.detail-links:active {
+    color: var(--Blue);
+    font-weight: bold;
+    background-color: var(--Yellow);
+}
+
+
+
+
+
+
+/* --About-- */
+
+.about-content {
+
+    padding-bottom: 2%;
+    display: flex;
+    flex-direction: column;
+}
+
+.about-top {
+    display: flex;
+    flex-direction: column;
+}
+
+.about-bottom {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: center;
+}
+
+
+
+
+/* --update-- */
+
+
+.login-form {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    width: 100%;
+    padding: 10px;
+}
+
+
+.login-form p {
+    display: flex;
+    flex-direction: row;
+    padding: 5px;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+}
+
+.login-form form label {
+    display: inline-block;
+    text-align: right;
+
+}
+
+
+
+
+
+/* --Update-- */
+
+.update-form {
+    display: inline-block;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+
+.update-form form {
+    margin: auto;
+}
+
+.update-form form label {
+    display: inline-block;
+    text-align: right;
+    width: 200px;
+    vertical-align: top;
+}
+
+.update-form form input[type=text] {
+    display: inline-block;
+    width: 350px;
+}
+
+.update-form form select {
+    width: 355px;
+}
+
+
+
+
+/* styling responsive design */
+
+.hamburger {
+    display: none;
+}
+
+
+
+/* MOBILE */
+
+@media screen and (max-width: 319px) {
+
+
+    .hamburger {
+        /* display: block; */
+        padding: 1.5rem;
+        display: flex;
+        position: absolute;
+        right: 0;
+        top: 0;
+        padding: 0.5rem 1rem;
+    }
+
+    .content {
+        font-size: 18px;
+        padding: .5rem;
+        width: 100%;
+    }
+
+    .header-text {
+        font-size: 20px;
+        padding: .5rem;
+        width: 100%;
+    }
+
+    .header-nav {
+        display: none;
+    }
+
+    .footer-container {
+        display: flex;
+        flex-direction: column;
+        padding: .7rem;
+    }
+
+    .footer-content {
+        display: flex;
+        width: fit-content;
+        margin: .5rem;
+    }
+
+    .walking-dead-container {
+        display: flex;
+        width: 90%;
+    }
+
+    .walking-dead-top {
+        font-size: 15px;
+        padding: 5%;
+    }
+
+    .walking-dead-bottom {
+        font-size: smaller;
+    }
+
+    .walking-dead-bottom p {
+        margin: 5%;
+    }
+
+    .walkingdeadimage {
+        width: 80%;
+        margin: 5% 0;
+        border-radius: 40px;
+
+    }
+
+    .admin-table-container {
+        overflow-x: auto;
+    }
+
+
+
+
+}
+
+/* TABLET */
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+
+
+    .hamburger {
+        display: block;
+        display: flex;
+        justify-content: flex-end;
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 0;
+        padding: 0.5rem 1rem;
+    }
+
+    .content {
+        font-size: 20px;
+        padding: .5rem;
+        width: 100%;
+    }
+
+    .header-text {
+        font-size: 23px;
+        padding: .5rem;
+        width: 100%;
+    }
+
+    .header-nav {
+        display: none;
+    }
+
+    .footer-container {
+        display: flex;
+        flex-direction: column;
+        padding: .5rem;
+    }
+
+    .footer-content {
+        display: flex;
+        width: fit-content;
+        margin: .5rem;
+    }
+
+    .walking-dead-container {
+        display: flex;
+        width: 90%;
+    }
+
+    .walking-dead-top {
+        font-size: .7rem;
+    }
+
+    .walkingdeadimage {
+        width: 80%;
+        margin: 5% 0;
+    }
+
+    .walking-dead-bottom p {
+        margin: 2%;
+    }
+
+}
+
+@media screen and (min-width: 1024px) {
+
+    .walking-dead-container {
+        display: flex;
+        flex-direction: row;
+        width: 85%;
+    }
+
+    .walking-dead-top {
+        width: 200%;
+        font-size: .7rem;
+        display: flex;
+        align-content: center;
+        padding: 4%;
+    }
+
+    .walking-dead-bottom p {
+        margin: 4%;
+    }
+
+    .walkingdeadimage {
+        width: 100%;
+        margin: 10% 0;
+    }
+
+}

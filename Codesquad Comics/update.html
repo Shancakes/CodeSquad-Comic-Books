@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update</title>
+
+    <script src="https://kit.fontawesome.com/5bdef888aa.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="styles/styles.css">
+
+
+</head>
+
+<body class="gradient">
+
+
+    <header>
+        <div class="header-container">
+
+            <div class="header-logo-left">
+                <img src=" public/images/CodeSquad-Comics-logo.png" alt="Codesquad Comic Logo" width="200px">
+            </div>
+
+            <div class="nav-container">
+                <nav class=" header-nav">
+                    <ul>
+                        <li><a href="index.html" class="class1">HOME</a></li>
+                        <li> <a href="about.html" class="class1">ABOUT</a></li>
+                        <li> <a href="login.html" class="class1">LOGIN</a></li>
+                    </ul>
+            </div>
+
+            </nav>
+
+            <div class="hamburger">
+                <i class="fa fa-bars"></i>
+                <span class="bar"></span>
+            </div>
+
+
+        </div>
+
+    </header>
+
+
+
+    <div class="content">
+        <div class="update-form">
+            <h1 class="header-text">UPDATE COMIC</h1>
+            <form action="/action_page.php">
+
+                <label for="title">Title</label>
+                <input type="text" id="title" name="title" placeholder="title value stored in database"><br><br>
+
+                <label for="author">Author:</label>
+                <input type="text" id="author" name="v" placeholder="author value stored in database"><br><br>
+
+                <label for="publisher">Publisher:</label>
+                <select name="language" id="language" class="create-dropdown-menu">
+                    <option value="pvalue">Publisher value stored in database</option>
+                    <option value="boom">BOOM! Box</option>
+                    <option value="DC">DC Comics</option>
+                    <option value="harry">Harry N. Abrams</option>
+                    <option value="icon">Icon Books</option>
+                    <option value="image">Image Comics</option>
+                    <option value="marvel">Marvel</option>
+                    <option value="simon">Simon & Schuster</option>
+                    <option value="top shelf">Top Shelf Productions</option>
+                    <option value="viz">VIZ Media LLC</option>
+                </select><br><br>
+
+
+                <label for="genre">Genre:</label>
+                <input type="text" id="genre" name="genre" placeholder="genre data stored in database"><br><br>
+
+                <label for="pages">Number Of Pages:</label>
+                <input type="text" id="pages" name="pages" placeholder="Pages stored in database"><br><br>
+
+                <label for="rating">Rating:</label>
+                <input type="text" id="rating" name="rating" placeholder="rating stored in database"><br><br>
+
+                <label for="synopsis">Synopsis:</label>
+                <textarea type="text" id="synopsis" name="synopsis" placeholder="Synopsis"
+                    class="synopsis-textbox">Synopsis value stored in textbox</textarea>
+                <br><br>
+                <p>
+
+                    <input type="submit" value="Submit" class="yellow-button">
+                </p>
+        </div>
+
+
+        </form>
+    </div>
+
+
+
+</body>
+
+
+
+<footer>
+    <div class="footer-container">
+
+        <div class="footer-content">
+            <p><span class="yellow">VISIT US</span></p>
+            CodeSquad Comics<br>
+            123 Dorchester Avenue<br>
+            Boston, MA 02124
+        </div>
+        <div class="footer-content">
+            <p><span class="yellow">LINKS</span></p>
+            <a href=" index.html" class="class1">Home</a><br>
+            <a href="about.html" class="class1">About</a><br>
+            <a href="login.html" class="class1">Login</a><br>
+        </div>
+        <div class="footer-content">
+            <p><span class="yellow">FOLLOW US</span></p>
+            <div class="footer-icons">
+                <a href="https://www.facebook.com/" class="class1"><i class="fa-brands fa-facebook"
+                        id="Facebook"></i></a><br>
+                <a href="https://www.instagram.com/" class="class1"><i class="fa-brands fa-instagram"
+                        id="Instagram"></i></a><br>
+                <a href="https://twitter.com/?lang=en" class="class1"><i class="fa-brands fa-twitter"
+                        id="Twitter"></i></a><br>
+            </div>
+        </div>
+
+        <div class="footer-content">
+            <p><span class="yellow">A PRODUCT OF</span></p>
+            <a href="https://codesquad.org">
+                <img src="public/images/CodeSquad-logo-b.png" id="codesquad" width="150px">
+            </a>
+        </div>
+    </div>
+
+</footer>
+
+</html>
